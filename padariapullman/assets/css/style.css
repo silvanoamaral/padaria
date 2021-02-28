@@ -1,0 +1,829 @@
+/* GERAL */
+
+* {
+    font-family: 'Montserrat';
+}
+
+body,
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 7;
+    background: #fff;
+}
+
+#banner {
+    margin-top: 90px;
+}
+
+.prod-card {
+    background: #fff;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0px 0px 2px 2px #0000001a;
+    height: 100%;
+    cursor: pointer;
+}
+
+.prod-name {
+    padding: 25px 10px;
+}
+
+.prod-name h5 {
+    color: #8D8D8D;
+    margin: 0;
+    font-size: 20px; 
+    min-height: 75px;
+    align-items: center;
+    display: flex;
+}
+
+.prod-offer {
+    text-align: center;
+    padding: 20px;
+    background: #0346B5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.prod-offer p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.cat-list {
+    padding: 20px 130px;
+    border: solid 2px #3CBCFF;
+    color: #0346B5;
+    margin: 0 auto;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+
+/* HEADER */
+
+.navbar-brand {
+    z-index: 5;
+    position: relative;
+}
+
+.navDropdown .bg-dropdown {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 60%;
+    background: #fff;
+    padding: 50px 0;
+    display: none;
+}
+
+.navDropdown:hover .bg-dropdown {
+    display: block;
+}
+
+.bg-dropdown .items {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.bg-dropdown .items a {
+    text-align: center;
+}
+
+.bg-dropdown .items .border-item {
+    max-width: 90px;
+    border: solid 1px #3CBCFF;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.nav-link,
+.bg-dropdown .items .item span {
+    color: #707070;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.navDropdown.active .nav-link,
+#modal-product .nav-link.active {
+    font-weight: 900;
+    color: #3CBCFF;
+}
+
+.nav-link:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 4px;
+    background: #3cbcff;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.nav-link:hover:after,
+.navDropdown.active .nav-link:after,
+#modal-product .nav-link.active:after {
+    width: 50%;
+}
+
+
+/* MENU MOBILE */
+
+#bg-menu-mobile,
+.mobile-subitems {
+    width: 90%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #FFF4E6;
+    will-change: transform;
+}
+
+#bg-menu-mobile {
+    z-index: 6;
+}
+
+.mobile-subitems {
+    z-index: 8;
+}
+
+#menu-mobile .mobile-items {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    left: -95%;
+    color: #fff;
+    z-index: 6;
+}
+
+#menu-mobile.open-menu .mobile-items {
+    display: block;
+}
+
+#hamburguer {
+    width: 40px;
+    height: 25px;
+    position: relative;
+    margin-right: 25px;
+    cursor: pointer;
+    z-index: 7;
+    background-color: transparent;
+}
+
+#hamburguer span {
+    z-index: 3;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    border-radius: 5px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .25s ease-in-out
+}
+
+#hamburguer span:nth-child(1) {
+    top: 0px
+}
+
+#hamburguer span:nth-child(2) {
+    top: 10px
+}
+
+#hamburguer span:nth-child(3) {
+    top: 20px
+}
+
+#hamburguer.open span:nth-child(1) {
+    top: 14px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    background: #ccc
+}
+
+#hamburguer.open span:nth-child(2) {
+    opacity: 0;
+    left: -30px;
+    -webkit-transition: .16s ease-in-out;
+    -moz-transition: .16s ease-in-out;
+    -o-transition: .16s ease-in-out;
+    transition: .16s ease-in-out
+}
+
+#hamburguer.open span:nth-child(3) {
+    top: 14px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    background-color: #ccc
+}
+
+.bg-dark {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000000;
+    transition: opacity .2s;
+}
+
+.open-menu .bg-dark,
+body.open .bg-dark {
+    z-index: 8;
+    opacity: .8;
+    transition: opacity 1.4s;
+}
+
+.mobile-items .item {
+    width: 80%;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.mobile-items .item span,
+.mobile-subitems h5 {
+    color: #90572D;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
+    margin-top: 10px;
+}
+
+.mobile-items .item .w-50:nth-child(1) {
+    padding-right: 10px;
+}
+
+.mobile-items .item .w-50:nth-child(2) {
+    padding-left: 10px;
+}
+
+.mobile-subitems .back {
+    position: absolute;
+    width: 35px;
+    height: auto;
+    left: 5%;
+    top: 2%;
+}
+
+.mobile-subitems .items img {
+    max-width: 30px;
+}
+
+.mobile-subitems .item {
+    width: 100%;
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    color: #707070;
+    font-weight: 500;
+}
+
+.mobile-subitems .see-all {
+    color: #707070;
+    font-weight: 600;
+}
+
+.mobile-subitems .border-item {
+    padding: 10px;
+    border: solid 1px #3CBCFF;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.mobile-subitems .content {
+    padding: 0 20px;
+}
+
+
+/* FOOTER */
+
+
+/* RECEITAS */
+
+@keyframes recipe-animate {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.recipe-title h1,
+#sec-01 h1,
+.category-title {
+    color: #90572D;
+    font-size: 34px;
+}
+
+.recipe {
+    height: 185px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.recipe .img-box {
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+}
+
+.recipe .img-box img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    width: 100%;
+    z-index: 0;
+}
+
+.recipe .img-box .shadow {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: background-image 0.3s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.recipe .border-recipe,
+.recipe .text {
+    left: 20px;
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+}
+
+.recipe .border-recipe {
+    border-top: 7px solid transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    bottom: 0px;
+    display: block;
+    height: 1px;
+    transition: border-width 0.2s linear;
+}
+
+.recipe .text {
+    bottom: 20px;
+    padding: 0;
+    text-align: left;
+    transform: translateY(0);
+    transition: transform 0.2s linear;
+}
+
+.recipe .text p {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.recipe:hover img {
+    animation-name: recipe-animate;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
+.recipe:hover .shadow {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+}
+
+.recipe:hover .border-recipe {
+    border-width: 12px;
+}
+
+.recipe:hover .text {
+    transform: translateY(-3px);
+}
+
+.recipe.green .border-recipe {
+    background-color: #00a565;
+    border-color: #00a565;
+}
+
+.recipe.brown .border-recipe {
+    background-color: #a57400;
+    border-color: #a57400;
+}
+
+.recipe.red .border-recipe {
+    background-color: #a52b00;
+    border-color: #a52b00;
+}
+
+.recipe.blue .border-recipe {
+    background-color: #0088a5;
+    border-color: #0088a5;
+}
+
+.socials img {
+    max-width: 50%;
+}
+
+.socials {
+    max-width: 35%;
+    margin-left: auto;
+}
+
+.copy p {
+    color: #BCBCBC;
+    font-size: 20px;
+    margin: 0;
+}
+
+.powered .text-right {
+    position: relative;
+}
+
+.powered .text-right:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 25px;
+    display: block;
+    background-color: #d4d4d4;
+}
+
+
+/* SEC-01 - CAROUSEL */
+
+.container-fluid,
+#category-page #sec-02,
+.bg-nw {
+    background: #FFF4E6;
+}
+
+.owl-stage-outer {
+    padding: 5px;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 98%;
+    left: 1%;
+}
+
+.owl-nav button span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: #FFF4E6;
+    border-radius: 50%;
+    font-size: 40px;
+    line-height: 43px;
+    box-shadow: 0px 0px 2px 2px #0000001a
+}
+
+.owl-next {
+    float: right;
+}
+
+.c-item {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.prod-card.destaques {
+    background-image: url('../img/destaques.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.prod-card.bolos {
+    background-image: url('../img/bolos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.prod-card.paes {
+    background-image: url('../img/paes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.prod-card.lancamentos {
+    background-image: url('../img/lancamentos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* MODAL PRODUTOS */
+
+#modal-product {
+    position: fixed;
+    width: 100%;
+    height: 95%;
+    bottom: -100%;
+    z-index: 10;
+    overflow-y: scroll;
+}
+
+#modal-product::-webkit-scrollbar {
+    width: 10px;
+}
+
+#modal-product::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #595959;
+}
+
+#modal-product .product-content {
+    padding: 3rem;
+    background: #fff;
+}
+
+#modal-product .modal-prod-title {
+    color: #2E2E2E;
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 25px
+}
+
+#modal-product .ingredientes h3 {
+    color: #707070;
+    font-weight: 700;
+    font-size: 23px;
+    margin: 25px 0
+}
+
+#modal-product .ingredientes h5 {
+    color: #838383;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#modal-product .ingredientes p {
+    color: #838383;
+}
+
+#modal-product #nav-tab .nav-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+}
+
+#modal-product .offer {
+    padding: 25px;
+    border: solid 1px #EAEAEA;
+    margin: 20px 0;
+}
+
+#modal-product .offer h3 {
+    color: #2E2E2E;
+    font-size: 16px;
+    font-weight: 900;
+    margin: 0;
+}
+
+#modal-product .offer img {
+    width: 90px;
+}
+
+#modal-product .offer span {
+    color: #208043;
+    font-size: 12px;
+}
+
+#modal-product .offer a {
+    font-size: 13px;
+    background: #3CBCFF;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+#modal-product .close {
+    position: absolute;
+    top: 2%;
+    right: 20%;
+}
+
+#modal-product .prod-card {
+    box-shadow: none;
+}
+
+.modal-open-close {
+    cursor: pointer;
+}
+
+
+/* MOBILE */
+
+
+/* TELAS PEQUENAS */
+
+@media (max-width: 768px) {
+    .navbar>.container {
+        justify-content: right;
+    }
+    .recipe-title h1 {
+        font-size: 25px;
+    }
+    .copy p {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .socials {
+        margin: 0 auto;
+    }
+    .cat-list {
+        padding: 20px 50px;
+    }
+    #modal-product .product-content {
+        padding: 10px;
+    }
+    #modal-product #nav-tab .nav-link {
+        font-size: 13px;
+    }
+    #modal-product .offer {
+        padding: 10px
+    }
+    .destaques,
+    .bolos,
+    .lancamentos,
+    .paes {
+        min-height: 500px;
+    }
+}
+
+
+/* TELAS GRANDES */
+
+@media (min-width: 992px) {
+    .out {
+        display: contents;
+    }
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        width: 110%;
+        left: -5%;
+    }
+}
+
+div#conteudo-interno {
+    margin-top: 63px;
+}
+.headerBottom h1 {
+    display: block;
+    text-align: left;
+    font-size: 26px;
+    color: #414141;
+    text-transform: uppercase;
+}
+.headerBottom h1 span {
+    display: block;
+    font-size: 49px;
+}
+.menuLandingSections {
+    list-style: none;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px 0px 50px 0px;
+    padding: 28px 0px 0px 0px;
+    text-align: center;
+    background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/bg/bg_menu_landing.jpg) no-repeat center 65px;
+}
+.menuLandingSections li {
+    vertical-align: top;
+    float: left;
+    margin: auto;
+    text-align: center;
+}
+.menuLandingSections li a {
+    margin: auto;
+    margin-bottom: 5px;
+    display: block;
+    width: 108px;
+    padding-top: 85px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #424242;
+    overflow: hidden;
+}
+.btn_landing_0{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat 0px top}
+.btn_landing_1{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -100px top}
+.btn_landing_2{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -200px top}
+.btn_landing_3{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -300px top}
+.btn_landing_4{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -400px top}
+.btn_landing_5{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -500px top}
+.btn_landing_6{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -600px top}
+.btn_landing_7{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -700px top}
+
+.btn_landing_10{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -400px top}
+.btn_landing_11{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -500px top}
+.btn_landing_12{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -600px top}
+
+.btn_landing_20{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat 0px top}
+.btn_landing_21{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -100px top}
+.btn_landing_22{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -200px top}
+.btn_landing_23{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -300px top}
+.btn_landing_24{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat 0 top}
+.btn_landing_25{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat -100px top}
+.btn_landing_26{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat -200px top}
+
+
+.btn_landing_0:hover, .btn_landing_0.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -800px top}
+.btn_landing_1:hover, .btn_landing_1.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -900px top}
+.btn_landing_2:hover, .btn_landing_2.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1000px top}
+.btn_landing_3:hover, .btn_landing_3.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1100px top}
+.btn_landing_4:hover, .btn_landing_4.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1200px top}
+.btn_landing_5:hover, .btn_landing_5.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1300px top}
+.btn_landing_6:hover, .btn_landing_6.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1400px top}
+.btn_landing_7:hover, .btn_landing_7.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1500px top}
+
+.btn_landing_10:hover, .btn_landing_10.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -1200px top}
+.btn_landing_11:hover, .btn_landing_11.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -1300px top}
+.btn_landing_12:hover, .btn_landing_12.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -1400px top}
+
+.btn_landing_20:hover, .btn_landing_20.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -400px top}
+.btn_landing_21:hover, .btn_landing_21.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -500px top}
+.btn_landing_22:hover, .btn_landing_22.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -600px top}
+.btn_landing_23:hover, .btn_landing_23.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -700px top}
+
+.btn_landing_24:hover, .btn_landing_24.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat -300px top}
+.btn_landing_25:hover, .btn_landing_25.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat -400px top}
+.btn_landing_26:hover, .btn_landing_26.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat -500px top}
+
+.listOrangeDot {
+    margin: 30px 0px 50px 0px;
+    padding-left: 20px;
+    list-style-image: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/bg/list_orange_dot.gif);
+}
+
+.columnTxtLeft h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.columnTxtLeft p {
+    font-size: 14px;
+}
