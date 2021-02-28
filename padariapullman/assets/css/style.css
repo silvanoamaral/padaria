@@ -818,12 +818,21 @@ div#conteudo-interno {
     padding-left: 20px;
     list-style-image: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/bg/list_orange_dot.gif);
 }
-
+.sectionText p, .listOrangeDot li {
+    clear: both;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+.sectionText span {
+    color: #ff8400;
+}
 .columnTxtLeft h3 {
     font-size: 20px;
     margin-bottom: 20px;
 }
-
+.columnTxtLeft h2 {
+    font-size: 20px;
+}
 .columnTxtLeft p {
     font-size: 14px;
 }
