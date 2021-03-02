@@ -8,7 +8,7 @@ function windowResize() {
 
 function startCarousel() {
   $('.carousel-products').owlCarousel({
-      loop: false,
+      loop: true,
       nav: true,
       margin: 15,
       items: 4,
