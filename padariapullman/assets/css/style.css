@@ -836,3 +836,7 @@ div#conteudo-interno {
 .columnTxtLeft p {
     font-size: 14px;
 }
+
+footer {
+    height: 300px;
+}
