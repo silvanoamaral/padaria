@@ -727,3 +727,114 @@ body.open .bg-dark {
         left: -5%;
     }
 }
+
+
+div#conteudo-interno {
+    margin-top: 63px;
+}
+.headerBottom h1 {
+    display: block;
+    text-align: left;
+    font-size: 26px;
+    color: #414141;
+    text-transform: uppercase;
+}
+.headerBottom h1 span {
+    display: block;
+    font-size: 49px;
+}
+.menuLandingSections {
+    list-style: none;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px 0px 50px 0px;
+    padding: 28px 0px 0px 0px;
+    text-align: center;
+    background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/bg/bg_menu_landing.jpg) no-repeat center 65px;
+}
+.menuLandingSections li {
+    vertical-align: top;
+    float: left;
+    margin: auto;
+    text-align: center;
+}
+.menuLandingSections li a {
+    margin: auto;
+    margin-bottom: 5px;
+    display: block;
+    width: 108px;
+    padding-top: 85px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #424242;
+    overflow: hidden;
+}
+.btn_landing_0{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat 0px top}
+.btn_landing_1{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -100px top}
+.btn_landing_2{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -200px top}
+.btn_landing_3{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -300px top}
+.btn_landing_4{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -400px top}
+.btn_landing_5{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -500px top}
+.btn_landing_6{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -600px top}
+.btn_landing_7{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -700px top}
+
+.btn_landing_10{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -400px top}
+.btn_landing_11{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -500px top}
+.btn_landing_12{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -600px top}
+
+.btn_landing_20{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat 0px top}
+.btn_landing_21{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -100px top}
+.btn_landing_22{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -200px top}
+.btn_landing_23{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -300px top}
+.btn_landing_24{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat 0 top}
+.btn_landing_25{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat -100px top}
+.btn_landing_26{ background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat -200px top}
+
+
+.btn_landing_0:hover, .btn_landing_0.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -800px top}
+.btn_landing_1:hover, .btn_landing_1.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -900px top}
+.btn_landing_2:hover, .btn_landing_2.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1000px top}
+.btn_landing_3:hover, .btn_landing_3.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1100px top}
+.btn_landing_4:hover, .btn_landing_4.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1200px top}
+.btn_landing_5:hover, .btn_landing_5.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1300px top}
+.btn_landing_6:hover, .btn_landing_6.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1400px top}
+.btn_landing_7:hover, .btn_landing_7.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing.png) no-repeat -1500px top}
+
+.btn_landing_10:hover, .btn_landing_10.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -1200px top}
+.btn_landing_11:hover, .btn_landing_11.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -1300px top}
+.btn_landing_12:hover, .btn_landing_12.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing2.png) no-repeat -1400px top}
+
+.btn_landing_20:hover, .btn_landing_20.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -400px top}
+.btn_landing_21:hover, .btn_landing_21.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -500px top}
+.btn_landing_22:hover, .btn_landing_22.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -600px top}
+.btn_landing_23:hover, .btn_landing_23.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_mundo.png) no-repeat -700px top}
+
+.btn_landing_24:hover, .btn_landing_24.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat -300px top}
+.btn_landing_25:hover, .btn_landing_25.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat -400px top}
+.btn_landing_26:hover, .btn_landing_26.active{color:#EB8807; background: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/btns/btns_landing_innovacion.png) no-repeat -500px top}
+
+.listOrangeDot {
+    margin: 30px 0px 50px 0px;
+    padding-left: 20px;
+    list-style-image: url(https://www.bimbobrasil.com.br/novo/wp-content/themes/gbbr/css/img/bg/list_orange_dot.gif);
+}
+.sectionText p, .listOrangeDot li {
+    clear: both;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+.sectionText span {
+    color: #ff8400;
+}
+.columnTxtLeft h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.columnTxtLeft h2 {
+    font-size: 20px;
+}
+.columnTxtLeft p {
+    font-size: 14px;
+}
